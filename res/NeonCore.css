@@ -1,0 +1,658 @@
+ol, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input { margin: 0; padding: 0; }
+ ol, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input { margin: 0; padding: 0; }
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	font-weight: 300;
+	height: 100%;
+}
+
+#banner {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: table;
+    z-index: 2;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	color: #fff;
+}
+
+#banner h1 {
+	color: #fff;
+	font-size: 50px;
+}
+
+#banner.small {
+	height: 200px !important;
+}
+
+#banner.large {
+	height: 400px !important;
+}
+
+#banner.full {
+	height: 100% !important;
+}
+
+.bannerbg {
+	background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+	background-image: url(res/banner.jpg);
+	background-attachment: fixed;
+}
+
+#bannercontainer {
+	display: table-cell;
+    vertical-align: middle;
+    padding: 0em 1.6em;
+}
+
+.rndbtn {
+	background: #2196F3;
+    border-color: #2196F3;
+    border-style: solid;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0px 35px 0 rgba(33, 150, 243, 0.5);
+	outline: none;
+}
+
+.sqrbtn {
+	background: #2196F3;
+    border-color: #2196F3;
+    border-style: solid;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0px 35px 0 rgba(33, 150, 243, 0.5);
+	outline: none;
+	width: 220px;
+}
+
+.sqrbtn:active {
+	background: #2196F3;
+    border-color: #2196F3;
+    border-style: solid;
+    color: #ffffff;
+    box-shadow: 0 0px 0px 0 rgba(33, 150, 243, 0.5);
+	outline: none;
+}
+
+.rndbtn.light {
+	background: transparent;
+    border-color: #2196F3;
+    border-style: solid;
+    color: #212121;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    /*box-shadow: 0 0px 35px 0 rgba(33, 150, 243, 0.5);*/
+	outline: none;
+}
+
+.rndbtn:active {
+	background: #2196F3;
+    border-color: #2196F3;
+    border-style: solid;
+    color: #ffffff;
+    box-shadow: 0 0px 0px 0 rgba(33, 150, 243, 0.5);
+	outline: none;
+}
+
+.headspace {
+	padding-top: 103px !important;
+}
+
+#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.card {
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card.shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card.default {
+	background: #3a4a52;
+	color: #fff;
+}
+
+.card.darkblue {
+	
+}
+
+.card.border {
+	border: 1px solid #ececec;
+}
+
+.card p {
+	border-top: 1px solid rgba(160,160,160,0.2);
+	padding: 20px 0px;
+}
+
+.card .container {
+    padding: 10px;
+}
+
+.cbox {
+	position: absolute !important; /* CAN BE FIXED */
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+h1{
+	font-size: 50px;
+}
+
+.hbox {
+    margin-left: -1.6em;
+    margin-right: -1.6em;
+    overflow: auto;
+	width: 100%;
+	padding: 1.6em;
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
+}
+
+.hbox.footer {
+	margin-bottom: -1.6em !important;
+}
+
+.hbox.banner {
+	margin-top: -1.6em !important;
+}
+
+#content {
+	padding: 1.6em 1.6em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.26);
+}
+
+.center {
+	text-align: center;
+}
+
+#header {
+    background: #3a4a52 url() !important;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.sticky {
+	position: fixed !important;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + #content {
+    margin-top: 42px;
+}
+
+.icon svg {
+	/*max-width: 100px;*/
+	max-height: 100px;
+	padding: 10px 0px;
+}
+
+img.logo {
+	margin: 10px;
+	max-height: 40px;
+	height: 40px;
+	transition: all 0.2s ease-in-out;
+}
+
+input, select {
+	background: #263238;
+	border: 2px solid #37474F;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px;
+    outline: none;
+	font-size: 100%;
+	margin-bottom: 0px; /* for fluid content */
+	width: 196px;
+	text-align: center;
+	}
+
+select {
+	width: 220px;
+	margin-top: 5px; /* for use with other inputs */
+}
+
+input.static {
+	display: block;
+    margin: 5px auto;
+}
+
+#loginbox { /* DESIGNED FOR SPLASHPAGE */
+	position: relative;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    border: 50px solid rgba(255, 255, 255,.05);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 2px;
+}
+
+#loginbox>img {
+	width: 220px;
+    margin-bottom: 25px;
+    border: 0px solid;
+    border-radius: 2px;
+}
+
+#loginbar {
+	background: #2196F3;
+    border-color: #2196F3;
+    border-style: solid;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	outline: none;
+}
+
+#loginbar:active {
+          box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.26) !important; 
+      }
+
+.shadow-l {
+	box-shadow: 0 0px 50px 0 rgba(0, 0, 0, 0.26);
+}
+
+.shadow-m {
+	box-shadow: 0 0px 35px 0 rgba(0, 0, 0, 0.26);
+}
+
+#sitename {
+	width: 100%;
+	float: left;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+}
+
+.splash .bannerwrap {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+	overflow-y: auto;
+}
+
+#navbar {
+	float: left;
+	background: #263238;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+}
+.nbbtn {
+	height: 40px; 
+}
+
+#nc-title {
+	color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+#navbar ul, .card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow-x: auto;
+    white-space: nowrap;
+}
+
+#navbar li, .card li {
+    display: inline-block;
+}
+
+#navbar li a, .card li a {
+    display: inline-block;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+#navbar li:hover:not(.active), .card li:hover:not(.active) {
+    
+} 
+
+#navbar li:after, .card li:after {
+  	content: '';
+ 	position: relative;
+ 	bottom:0;
+  	transition: 0.3s;
+  	height: 3px;
+  	background: #fff;
+  	width: 0%;
+  	margin: 0 auto;
+  	display: block;
+  	opacity: 0;
+ 	box-shadow: 0 0px 0px 0 rgb(255, 255, 255);
+}
+
+#navbar li:hover:after, .card li:hover:after {
+	width: 100%;
+	opacity: 1;
+}
+
+#navbar li:active:after, .card li:active:after {
+	box-shadow: 0 0px 10px 0 rgb(255, 255, 255);
+}
+
+#navbar .active, .card .active {
+    background-color: transparent;
+}
+
+#navbar .active:after, .card .active:after {
+  	content: '';
+  	position: relative;
+  	bottom:0;
+  	transition: 0.3s;
+  	height: 3px;
+  	background: #fff;
+  	width: 100%;
+  	margin: 0 auto;
+  	display: block;
+  	opacity: 1;
+}
+
+.hs {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: slideIn 1s cubic-bezier(0, 1, 0, 1);
+    animation: slideIn 1s cubic-bezier(0, 1, 0, 1);
+}
+
+@-webkit-keyframes slideIn {
+    from {opacity: 0;transform: translateY(100%);}
+    to {opacity: 1;transform: translateY(0%);}
+}
+
+@keyframes slideIn {
+    from {opacity: 0;transform: translateY(100%);}
+    to {opacity: 1;transform: translateY(0%);}
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #3a4a52;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+
+/* Container around content */
+.timeline .container {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline .container.left {
+	padding-right: 40px;
+}
+
+.timeline .container.right {
+	padding-left: 40px;
+}
+
+/* The circles on the timeline */
+.timeline .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #3a4a52;
+    border: 4px solid #3a4a52;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline .left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.timeline .right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timeline .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #ececec;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ececec;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #ececec;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ececec transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline .right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.timeline .content {
+    padding: 10px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .timeline .container {
+    width: 100%;
+    box-sizing: border-box;
+	padding: 10px 0px 0px 70px;
+  }
+	
+  .timeline .container.left {
+	padding-right: 0px;
+}
+
+  .timeline .container.right {
+	padding-left: 70px;
+}
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline .container::before {
+    left: 60px;
+    border: medium solid #ececec;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ececec transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .timeline .left::after, .timeline .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .timeline .right {
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.spacer { display:none; }
+}
+
+@media (max-width:800px) {
+  #sitename, #navbar {
+    width: 100%;
+  }
+  img.logo {
+    height: 25px;
+  }
+  #sitename {
+    text-align: center;
+  }
+  .headspace {
+	padding-top: 88px !important;
+  }
+  h1 {
+	font-size: 2em!important;	
+  }
+}
+
+ @media (max-width:320px){
+ #content { padding: 0.5em 0.5em !important; }
+ .hbox { margin-left: -0.5em; margin-right: -0.5em; padding: 0.5em; }
+	.hbox.footer {
+	margin-bottom: -0.5em !important;
+}
+	.hbox.banner {
+	margin-top: -0.5em !important;
+}
+ }
